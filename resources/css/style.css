@@ -5,11 +5,11 @@ html {
   color: black;
 }
 p {
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 a {
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: blue;
 }
 h1 {
@@ -34,8 +34,8 @@ h5 {
 h6 {
   color: white;
 }
-.lightgray {
-  background-color: gray;
+.gray {
+  background-color: skyblue;
 }
 /* top section */
 #topbar {
@@ -62,16 +62,13 @@ nav a {
   color: black;
 }
 /*banner section */
-#banner{
+#txttile {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-#righttxt {
-  display: flex;
-  border: 2px solid blue;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid orange;
   align-items: center;
+  width: 423px;
 }
 #headertxtbox {
   display: flex;
@@ -79,7 +76,7 @@ nav a {
   border: 2px solid red;
   justify-content: space-between;
   align-items: flex-start;
-  width: 70%;
+  margin: 0 40px;
 }
 #button {
   background-color: black;
@@ -88,11 +85,17 @@ nav a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-#righttxt h2 {
+#col5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#col5 h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-/* second section */
+/* keep practicing section */
+#cont0,
 #cont1,
 #cont4 {
   display: flex;
@@ -104,21 +107,19 @@ nav a {
 }
 .rcolumn {
   width: 423px;
-
+  border: 2px solid purple;
 }
-#col1,
-#col3 {
+.lcolumn {
   border: 2px solid blue;
   width: 80%;
-}
-#col2,
-#col4 {
-  border: 2px solid purple;
 }
 .txtboxhuge {
   display: flex;
   flex-direction: column;
   margin: 0px 24px 32px 24px;
+}
+.tinytext {
+  font-size: 0.75rem;
 }
 .imageboxhuge,
 video {
@@ -139,24 +140,21 @@ video {
 }
 .widetile {
   display: flex;
-  border: 2px solid orange;
+  border: 1px solid skyblue;
   align-items: center;
   height: 168px;
   width: 423px;
 }
 .imageboxsmall {
-  width: 148px;
+  width: 136px;
   height: 136px;
   margin: 16px 16px;
-  border: 2px solid greem;
   display: flex;
   align-items: center;
 }
 .imagesmall {
   width: 100%;
-
 }
-
 .txtboxsmall {
   display: flex;
   flex-direction: column;
@@ -196,6 +194,7 @@ video {
   display: flex;
   flex-direction: column;
   height: 120px;
+  background-color: white;
 }
 .txtboxbig h5 {
   margin: 8px 16px;
@@ -230,4 +229,5 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 48px;
+  border-top: 1px solid skyblue;
 }
