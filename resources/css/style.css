@@ -134,9 +134,8 @@ video {
 .txtboxhuge h2 {
   margin-bottom: 24px;
 }
-.tinytext {
+#col1 p.tinytext {
   margin: 32px 0px;
-  font-size: 0.8rem;
 }
 .widetile {
   display: flex;
@@ -230,4 +229,10 @@ footer {
   justify-content: space-between;
   padding-bottom: 48px;
   border-top: 1px solid skyblue;
+}
+footer p {
+  margin-left: 24px;
+}
+footer nav ul {
+  margin-right: 16px;
 }
