@@ -1,7 +1,7 @@
 
 html {
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: 'Raleway', sans-serif;
   color: black;
 }
 p {
@@ -15,18 +15,22 @@ a {
 h1 {
   font-size: 2rem;
   font-weight: bold;
+  line-height: 2.25rem;
 }
 h2 {
   font-size: 1rem;
   font-weight: bold;
+  line-height: 1.25rem;
 }
 h3 {
   font-size: 1rem;
   font-weight: bold;
+    line-height: 1.25rem;
 }
 h4 {
   font-weight: 1rem;
   color: black;
+  line-height: 1.25rem;
 }
 h5 {
 
@@ -34,8 +38,12 @@ h5 {
 h6 {
   color: white;
 }
+p {
+  font-size: .8rem;
+  line-height: 1rem;
+}
 .gray {
-  background-color: skyblue;
+  background-color: #767186;
 }
 /* top section */
 #topbar {
@@ -79,7 +87,7 @@ h6 {
   margin: 0 40px;
 }
 #button {
-  background-color: black;
+  background-color: #242033;
   width: 100%;
   text-align: center;
   padding-top: 0.5rem;
@@ -146,7 +154,7 @@ video {
 }
 .widetile {
   display: flex;
-  border: 1px solid skyblue;
+  border: 1px solid #767186;
   align-items: center;
   height: 168px;
   width: 423px;
@@ -235,7 +243,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 48px;
-  border-top: 1px solid skyblue;
+  border-top: 1px solid #767186;
 }
 footer p {
   margin-left: 24px;
@@ -289,14 +297,12 @@ footer nav {
   .rcolumn {
     width: 100%;
   }
-  #col5 {
-    background-color: skyblue;
-  }
+
   #cont0 {
     justify-content: center;
     align-items: flex-end;
     height: 341px;
-    background-color: blue;
+    background-color: #242033;
   }
   #txttile {
 
@@ -314,7 +320,7 @@ footer nav {
   .widetile {
     display: flex;
     flex-direction: column;
-    border: 1px solid skyblue;
+    border: 1px solid #767186;
     align-items: center;
     width: 608px;
     height: 383px;
@@ -345,7 +351,6 @@ footer nav {
   #row0 ul li {
     width: 100%;
     padding: 16px 16px;
-    background-color: skyblue;
     margin: 4px 0;
   }
   #cont2 h1{
