@@ -50,15 +50,15 @@ h6 {
   margin-left: 1.5rem;
   align-items: center;
 }
-nav ul {
+#fullnav ul {
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;
 }
-nav ul li {
+#fullnav ul li {
   margin-left: 1rem;
 }
-nav a {
+#fullnav a {
   color: black;
 }
 /*banner section */
@@ -121,15 +121,22 @@ nav a {
 .tinytext {
   font-size: 0.75rem;
 }
-.imageboxhuge,
+
 video {
-    border: 2px solid red;
+    border: 2px solid green;
     width: 80%;
     margin: 32px 24px;
+}
+
+.imageboxhuge{
+  width: 90%;
+  border: 2px solid red;
+  margin: 32px 24px;
 }
 .imagehuge {
   width: 100%;
   border: 2px solid green;
+
 }
 .txtboxhuge h2 {
   margin-bottom: 24px;
@@ -233,6 +240,130 @@ footer {
 footer p {
   margin-left: 24px;
 }
-footer nav ul {
+footer nav {
   margin-right: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* these only show for mobile */
+.mobileimage,
+#row0,
+#mobilenav  {
+  display: none;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 608px) {
+  /*sections that don't show */
+  #col0,
+  #col1,
+  #col4,
+  #row1,
+  #row2,
+  .imagesmall,
+  .txtboxhuge,
+  #logo,
+  #fullnav,
+  #footernav {
+    display: none;
+  }
+  /* top section */
+  #topbar {
+
+  }
+
+  #mobilenav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #mobilenav ul {
+
+  }
+  .headertxtbox {
+    width: 100%;
+    margin: 32px 16px;
+  }
+  .rcolumn {
+    width: 100%;
+  }
+  #col5 {
+    background-color: skyblue;
+  }
+  #cont0 {
+    justify-content: center;
+    align-items: flex-end;
+    height: 341px;
+    background-color: blue;
+  }
+  #txttile {
+
+    width: 100%;
+    margin: 16px 16px;
+  }
+  .headertxtbox p {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  /* sub in mobile only images */
+
+  /* reformat several sections */
+  .widetile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid skyblue;
+    align-items: center;
+    width: 608px;
+    height: 383px;
+    background-color: white;
+  }
+  .txtboxsmall {
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .imageboxsmall {
+    width: 576px;
+    height: 272px;
+    margin: 16px 16px;
+    display: flex;
+    align-items: center;
+  }
+  .mobileimage {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #row0{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px;
+  }
+  #row0 ul li {
+    width: 100%;
+    padding: 16px 16px;
+    background-color: skyblue;
+    margin: 4px 0;
+  }
+  #cont2 h1{
+    margin-bottom: 12px;
+  }
+  /* last section */
+  #cont4 {
+    justify-content: center;
+  }
+  #col3,
+  .imageboxhuge,
+  .imghuge {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
